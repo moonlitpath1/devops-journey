@@ -1,0 +1,23 @@
+{
+  "name": "devops-journey",
+  "version": "1.0.0",
+  "description": "My journey of learning Devops",
+  "homepage": "https://github.com/moonlitpath1/devops-journey#readme",
+  "bugs": {
+    "url": "https://github.com/moonlitpath1/devops-journey/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonlitpath1/devops-journey.git"
+  },
+  "license": "ISC",
+  "author": "Anushka Badhe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
