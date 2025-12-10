@@ -11,13 +11,11 @@
 - Implemented concept of Containers
 - Building and running the docker file
 
-
 ## Next Steps
 - learn how to share data among containers
-- deploy a simple python add code using docker  
+- Execute a simple python add code using docker  
 
 ---
-
 
 ## Commands:
 
@@ -119,3 +117,35 @@ CMD ["executable", "param1", "param2"]
 - Every instruction creates a new layer.
 - Docker caches layers if nothing has changed.
 - Proper ordering (dependencies before code) optimizes build speed.
+
+---
+
+## Builing a docker file
+
+`docker build -t <username>/<appname>:<tag> .`
+
+%%username should preferably be the same username that you use for DockerHub%%
+
+Example:
+`docker build -t moonlitpath1/project1:1.0 .`
+
+---
+
+## Run a Docker Container
+
+`docker run -p <host_port>:<container_port> <image_name>:<tag>`
+
+example:
+`docker run -p 8080:8080 moonlitpath1/project1:1.0`
+
+---
+
+## List Running Containers
+`docker ps`
+
+---
+
+## Stop container
+`docker stop container_id_or_name`
+
+---

@@ -4,6 +4,7 @@
 # node js image
 FROM node:24
 
+# tell docker to pretend it's working in app folder. all files will be created here.
 WORKDIR /app
 
 #in docker, we first install dependencies then the code, unlike normal way of first downloading code then dependencies
@@ -11,6 +12,9 @@ WORKDIR /app
 
 #install all our dependencies
 COPY package*.json ./
+# cpy files starting with package, ending with json
+# package-lock.json
+# package.json
 RUN npm install
 
 
